@@ -1,0 +1,54 @@
+nieyujin@raspberrypi:~ $ cd Desktop
+nieyujin@raspberrypi:~/Desktop $ cd project3
+nieyujin@raspberrypi:~/Desktop/project3 $ ls
+centralized-workflow-exercise  NIE-TOKEN                  Python_Calculator
+Lab1_Pi_UNIX                   NUIST_202283890022_Python
+nieyujin@raspberrypi:~/Desktop/project3 $ cd Python_Calculator
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ git branch MULTIPLY
+致命错误：一个名为 'MULTIPLY' 的分支已经存在
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ git branch
+* MULTIPLY
+  main
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ ls
+1  Calculator.py  README.md
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ nano Calculator.py
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ python3 Calculator.py
+Select operation.
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+Enter choice(1/2/3/4): 3
+Enter first number: 12
+Enter second number: 3
+12.0 x 3.0 = 36.0
+Let's do next calculation? (yes/no): no
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ nano Calculator.py
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ git add Calculator.py
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ git commit -m "Add Multiply operation; fixes #2"
+[MULTIPLY 1035e1a] Add Multiply operation; fixes #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+nieyujin@raspberrypi:~/Desktop/project3/Python_Calculator $ git log
+commit 1035e1abdc25a4a4e3304157c2a8b2dc0f09409c (HEAD -> MULTIPLY)
+Author: Er-shuang <1343109389@qq.com>
+Date:   Fri Mar 28 19:59:06 2025 +0800
+
+    Add Multiply operation; fixes #2
+
+commit d8b8e4e52bd05ff793e429b3d2e3a0cb9d3db9b0
+Author: Er-shuang <1343109389@qq.com>
+Date:   Fri Mar 28 19:33:07 2025 +0800
+
+    Add multiply operation to the Calculator.py file; fixes #2
+
+commit fe2de04676bfe177218859e690326d665257af58
+Author: Er-shuang <1343109389@qq.com>
+Date:   Fri Mar 28 19:22:31 2025 +0800
+
+    Add multiply operation to the Calculator.py file
+
+commit 953e5c09c203c92a27800825830ba6a1b9e49b02 (origin/main, origin/HEAD, main)
+Author: Xuanru GUO <121843241+Ataraxiaii@users.noreply.github.com>
+Date:   Fri Mar 28 18:51:18 2025 +0800
+
